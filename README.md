@@ -2,7 +2,7 @@
 
 Submitted by: **Yevheniya Solomyana**
 
-About this web app: **a frontend that supports CRUD (create, read, update, and delete) operations and shows five creators**
+About this web app: **a frontend that supports CRUD (create, read, update, and delete) operations and shows five Instagram creators**
 
 Time spent: **3** hours
 
