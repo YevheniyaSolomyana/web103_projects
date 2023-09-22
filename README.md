@@ -2,7 +2,7 @@
 
 Submitted by: **Yevheniya Solomyana**
 
-About this web app: **lists 5 best & cheapest places to visit, in Asia, Europe, Africa, and the Americas, according to https://www.bemytravelmuse.com/the-cheapest-destinations-to-travel-to/#19_Turkey_45day. **
+About this web app: **lists 5 best & cheapest places to visit, in Asia, Europe, Africa, and the Americas, according to** https://www.bemytravelmuse.com/the-cheapest-destinations-to-travel-to/#19_Turkey_45day.
 
 Time spent: **4** hours
 
