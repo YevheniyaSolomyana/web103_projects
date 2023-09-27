@@ -1,8 +1,8 @@
-# WEB103 Project 1 - *Best Places to Visit*
+# WEB103 Project 2 - *Best Places to Visit*
 
 Submitted by: **Yevheniya Solomyana**
 
-About this web app: **lists 5 best & cheapest places to visit, in Asia, Europe, Africa, and the Americas, according to** https://www.bemytravelmuse.com/the-cheapest-destinations-to-travel-to/#19_Turkey_45day.
+About this web app: **connects to a PostgresSQL database on Railway to render places from the database rather than from a JSON file.*
 
 Time spent: **4** hours
 
@@ -12,29 +12,26 @@ The following **required** functionality is completed:
 
 <!-- Make sure to check off completed functionality below -->
 - [X] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
-- [X] **The web app displays a title**
-- [X] **The web app displays at least five list items, each with at least three attributes (such as title, text, and image url)**
-- [X] **The user can click on each item in the list to see a detailed view of it, including all database fields**
-  - [X] *Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation* 
-- [X] **The web app serves an appropriate 404 page when no matching route is defined**
-- [ ] **The web app is appropriately styled using Picocss**
-
-The following **optional** features are implemented:
-
-- [X] The web app displays items in a unique format, such as cards rather than lists
+- [X] **The web app is connected to a PostgreSQL database, with an appropriately structured database table for the list items**
+- [X] **The PostgreSQL database includes a table that matches the data displayed in the web app**
+  - [X] **NOTE: Your GIF or a screenshot added to the README must include a view of your Railway database that shows the contents of the table used by your app**
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
 
-<img src='Project1_Walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='Project2_Walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with Kap  
+GIF created with Kap
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
 [peek](https://github.com/phw/peek) for Linux. -->
+
+## Notes
+
+Describe any challenges encountered while building the app or any additional context you'd like to add.
 
 ## License
 
