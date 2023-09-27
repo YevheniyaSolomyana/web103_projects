@@ -1,4 +1,5 @@
 import express from 'express'
+import './config/dotenv.js'
 import placesRouter from './routes/places.js'
 
 const app = express()

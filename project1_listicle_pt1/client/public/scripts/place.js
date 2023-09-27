@@ -11,7 +11,7 @@ const renderGift = async () => {
     if (place) {
         document.getElementById('image').src = place.image
         document.getElementById('name').textContent = place.name
-        document.getElementById('pricePerDay').textContent = 'Price: ' + place.pricePerDay
+        document.getElementById('pricePerDay').textContent = 'Price: ' + place.priceperday
         document.getElementById('meals').textContent = 'Meals: ' + place.meals
         document.getElementById('accommodation').textContent = 'Accommondation: ' + place.accommodation
         document.getElementById('transportation').textContent = 'Transportation: ' + place.transportation

@@ -23,7 +23,7 @@ const renderPlaces = async () => {
             bottomContainer.appendChild(name)
 
             const pricePerDay = document.createElement('p')
-            pricePerDay.textContent = 'Price: ' + place.pricePerDay
+            pricePerDay.textContent = 'Price: ' + place.priceperday
             bottomContainer.appendChild(pricePerDay)
 
             const link = document.createElement('a')
