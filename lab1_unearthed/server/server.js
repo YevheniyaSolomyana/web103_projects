@@ -7,6 +7,8 @@ const app = express()
 
 app.use(cors()) // cors middleware
 
+app.use(express.json())
+
 // we remove these static HTML pages, we will be using React
 // app.use('/public', express.static('./public'))
 // app.use('/scripts', express.static('./public/scripts'))

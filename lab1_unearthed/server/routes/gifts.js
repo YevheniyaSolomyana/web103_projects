@@ -20,4 +20,8 @@ giftsRouter.get('/', GiftsController.getGifts)
 // })
 giftsRouter.get('/:giftId', GiftsController.getGiftById)
 
+giftsRouter.post('/', GiftsController.createGift)
+giftsRouter.delete('/:id', GiftsController.deleteGift)
+giftsRouter.patch('/:id', GiftsController.updateGift)
+
 export default giftsRouter
