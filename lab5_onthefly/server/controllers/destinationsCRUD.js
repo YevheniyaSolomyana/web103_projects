@@ -45,8 +45,7 @@ const updateDestination = async (req, res) => {
         const results = await pool.query(
             `UPDATE destinations
       SET destination = $1, description = $2, city = $3, country = $4, img_url = $5, flag_img_url = $6
-      WHERE id = $7
-      RETURNING *`,
+      WHERE id = $7`,
             [destination, description, city, country, img_url, flag_img_url, id]
         )
         res.status(200).json(results.rows[0])

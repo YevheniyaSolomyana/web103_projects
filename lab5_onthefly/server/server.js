@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 app.use('/api/trips', tripsRouter)
 app.use('/api/activities', activitiesRouter)
 app.use('/api/destinations', destinationsRouter)
-app.use('/api/', trips_destinationsRouter)
+app.use('/api/trips-destinations', trips_destinationsRouter)
 
 const PORT = process.env.PORT || 3001
 
