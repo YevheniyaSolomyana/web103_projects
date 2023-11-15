@@ -10,6 +10,8 @@ import passport from 'passport'
 import session from 'express-session'
 import { GitHub } from './config/auth.js'
 
+const CLIENT_URL = process.env.NODE_ENV === 'production' ? 'https://web103projects-client.up.railway.app' : 'http://localhost:3000'
+
 // create express app
 const app = express()
 
@@ -24,7 +26,7 @@ app.use(express.json())
 
 // middleware layer to enable Cross Origin requests
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: CLIENT_URL,
   methods: 'GET,POST,PUT,DELETE,PATCH',
   credentials: true
 }))
@@ -40,7 +42,7 @@ passport.deserializeUser((user, done) => {
 })
 
 app.get('/', (req, res) => {
-  res.redirect('http://localhost:3000')
+  res.redirect(CLIENT_URL)
 })
 
 // app.get('/', (req, res) => {
