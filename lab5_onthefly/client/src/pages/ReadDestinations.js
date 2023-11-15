@@ -6,10 +6,13 @@ const ReadDestinations = (props) => {
 
     const [destinations, setDestinations] = useState([]);
 
-
     useEffect(() => {
-
-        setDestinations(props.data);
+        const fetchDestinations = async () => {
+            const response = await fetch(`${props.api_url}/api/destinations`)
+            const data = await response.json()
+            setDestinations(data)
+        }
+        fetchDestinations()
     }, [props]);
     
 

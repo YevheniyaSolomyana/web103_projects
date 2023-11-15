@@ -145,20 +145,42 @@ createUsersTable()
 
 const createTripsUsersTable = async () => {
     const createTripsUsersTableQuery = `
-        CREATE TABLE IF NOT EXISTS trips_users (
-            trip_id int NOT NULL,
-            user_id int NOT NULL,
-            PRIMARY KEY (trip_id, user_id),
-            FOREIGN KEY (trip_id) REFERENCES trips(id) ON UPDATE CASCADE,
-            FOREIGN KEY (user_id) REFERENCES users(id) ON UPDATE CASCADE
-        );
+      CREATE TABLE IF NOT EXISTS trips_users (
+        trip_id int NOT NULL,
+        user_id int NOT NULL,
+        PRIMARY KEY (trip_id, user_id),
+        FOREIGN KEY (trip_id) REFERENCES trips(id) ON UPDATE CASCADE,
+        FOREIGN KEY (user_id) REFERENCES users(id) ON UPDATE CASCADE
+      );
     `
+
     try {
         const res = await pool.query(createTripsUsersTableQuery)
         console.log('🎉 trips_users table created successfully')
-    } catch (error) {
+    }
+    catch (error) {
         console.error('⚠️ error creating trips_users table', err)
     }
 }
 
 createTripsUsersTable()
+
+const createUsersTripsTable = async () => {
+    const createUsersTripsTableQuery = `
+      CREATE TABLE IF NOT EXISTS users_trips (
+        id serial PRIMARY KEY,
+        trip_id int NOT NULL,
+        username text NOT NULL,
+        FOREIGN KEY (trip_id) REFERENCES trips(id)
+      );
+    `
+
+    try {
+        const res = await pool.query(createUsersTripsTableQuery)
+        console.log('🎉 users_trips table created successfully')
+    } catch (err) {
+        console.error('⚠️ error creating users_trips table', err)
+    }
+}
+
+createUsersTripsTable()
